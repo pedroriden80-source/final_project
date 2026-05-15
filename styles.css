@@ -10,10 +10,9 @@
 body {
     font-family: 'Poppins', sans-serif;
 
-    /* Added new background photo */
     background:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url('background photo.webp');
+    url('.//background photo.webp');
 
     background-size: cover;
     background-position: center;
