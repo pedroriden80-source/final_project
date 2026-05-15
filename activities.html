@@ -1,18 +1,16 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activities</title>
+<title>Activities - La Union Tourism</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-    /* Keeps the button looking like the others */
     .btn-outline-dark {
         transition: 0.3s;
     }
     
-    /* Styling the pills */
     .activity-pill {
         background: linear-gradient(to bottom, #ff9800, #f44336);
         color: white;
@@ -30,9 +28,15 @@
     .activity-pill:hover {
         opacity: 0.9;
         transform: scale(1.02);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     .detail-card {
-        display: none; /* Hidden by default for interactivity */
+        display: none;
+        animation: fadeIn 0.5s;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 </style>
 </head>
@@ -47,7 +51,7 @@
 
     <h2 class="text-center mb-4">Activities in La Union</h2>
     <p class="text-center mb-5">
-        From thrilling adventures to relaxing coastal experiences, La Union offers activities for every type of traveler.
+        From thrilling adventures to relaxing coastal experiences, La Union offers activities for every type of traveler. Explore our curated list of experiences below.
     </p>
 
     <div class="row g-4 mb-5">
@@ -64,42 +68,72 @@
         <div id="surfing" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🏄 Surfing Experience</h4>
-                <p>La Union is the <strong>Surfing Capital of the North</strong>. You can find world-class waves in San Juan, specifically at Urbiztondo Beach. Local instructors are available for hourly lessons, providing a board and guidance for beginners to catch their first wave.</p>
+                <p>La Union is recognized as the <strong>Surfing Capital of the North</strong>. Urbiztondo Beach in San Juan is the primary hub, offering consistent swells suitable for all levels.</p>
+                <ul>
+                    <li><strong>Beginners:</strong> Calm "beach breaks" are perfect for first-timers. Lessons usually cost around ₱400-₱500 per hour, including board rental and a personal instructor.</li>
+                    <li><strong>Advanced:</strong> Visit during the peak season (October to March) for larger, more challenging waves.</li>
+                    <li><strong>Pro Tip:</strong> Early morning sessions (6:00 AM) offer the calmest winds and the best water clarity.</li>
+                </ul>
             </div>
         </div>
 
         <div id="cliff" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🧗 Cliff Jumping & River Trekking</h4>
-                <p>Head to <strong>Tangadan Falls</strong> in San Gabriel for an adrenaline rush. The activity involves a scenic trek through rivers and forest trails, ending at a majestic waterfall where you can jump from cliffs ranging from 10 to 40 feet into deep natural pools.</p>
+                <p>Escape the beach for a day and head to the mountains of San Gabriel to visit the majestic <strong>Tangadan Falls</strong>.</p>
+                <ul>
+                    <li><strong>The Journey:</strong> Enjoy a 20-minute scenic trek across rivers and forest paths or a thrilling 4x4 ride to reach the falls.</li>
+                    <li><strong>The Thrill:</strong> Jump from various tiers ranging from 10 to 40 feet into a deep, refreshing natural basin. Life vests are provided for safety.</li>
+                    <li><strong>Bamboo Rafting:</strong> You can also rent a bamboo raft to get directly under the heavy cascade for a natural water massage.</li>
+                </ul>
             </div>
         </div>
 
         <div id="heritage" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🚶 Heritage & Cultural Walk</h4>
-                <p>Explore the history of La Union by visiting the <strong>Baluarte Watchtower</strong> in Luna and the Ma-Cho Temple in San Fernando. These sites tell the story of the province's colonial past and its diverse cultural influences over the centuries.</p>
+                <p>La Union boasts a rich blend of Spanish colonial history and indigenous culture. A walk through its historical sites is a journey back in time.</p>
+                <ul>
+                    <li><strong>Baluarte Watchtower:</strong> Located in Luna, this 400-year-old restored Spanish fortress stood as a sentinel against pirate attacks.</li>
+                    <li><strong>Ma-Cho Temple:</strong> A towering Taoist temple in San Fernando dedicated to the sea goddess Mazu, offering stunning views of the bay.</li>
+                    <li><strong>Namacpacan Church:</strong> One of the oldest churches in the region, known for its massive pillars and resilient architecture.</li>
+                </ul>
             </div>
         </div>
 
         <div id="farm" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🌾 Agri-Tourism & Farm Tours</h4>
-                <p>Visit the famous <strong>Grape Farms</strong> in Bauang where you can experience "Pick and Pay" harvesting. You can also explore local bee farms and dragon fruit plantations to see how La Union's fertile land supports sustainable agriculture.</p>
+                <p>Experience the "Pick and Pay" culture in La Union’s thriving agricultural sector. It's a great activity for families and groups.</p>
+                <ul>
+                    <li><strong>Grape Picking:</strong> Visit Bauang's famous vineyards. The best time to visit is during the harvest seasons (March-May).</li>
+                    <li><strong>Immuki Island:</strong> Explore mangrove-rich areas and learn about the local marine ecosystem and traditional fishing.</li>
+                    <li><strong>Local Produce:</strong> Beyond grapes, explore honeybee farms and dragon fruit plantations that showcase the province's diverse harvest.</li>
+                </ul>
             </div>
         </div>
 
         <div id="arts" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🎨 Pottery & Local Arts</h4>
-                <p>Visit the <strong>Red Clay Pagdamilian</strong> in San Juan to learn the traditional art of pottery. You can try your hand at the potter's wheel and create your own ceramic souvenirs, or visit local galleries showcasing the works of La Union's vibrant artist community.</p>
+                <p>San Juan is not just for surfers; it's a haven for creatives. Immerse yourself in the local art scene.</p>
+                <ul>
+                    <li><strong>Red Clay Pagdamilian:</strong> Learn the ancient art of pottery. For a small fee, local masters will teach you how to mold clay on a traditional manual wheel.</li>
+                    <li><strong>Luna Pebble Beach:</strong> Visit the stone art displays along the shore, where locals create intricate balance sculptures and pebble mosaics.</li>
+                    <li><strong>Art Galleries:</strong> Check out pop-up galleries near the surf shops that feature coastal-inspired paintings and sustainable crafts.</li>
+                </ul>
             </div>
         </div>
 
         <div id="sunset" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🌅 Sunset & Beach Relaxation</h4>
-                <p>There is nothing like a <strong>La Union Sunset</strong>. The coastline offers a front-row seat to one of the most beautiful golden hours in the Philippines. It's the perfect time to unwind at a beachfront cafe or simply sit on the sand and enjoy the view.</p>
+                <p>La Union is famous for its "Golden Hour." After a long day of adventure, there is no better way to recharge.</p>
+                <ul>
+                    <li><strong>Best Spots:</strong> Urbiztondo Beach and San Fernando Bay offer unobstructed views of the sun dipping into the West Philippine Sea.</li>
+                    <li><strong>Beachfront Dining:</strong> Enjoy fresh seafood or local "Ilocano" dishes at the many restaurants that line the coast.</li>
+                    <li><strong>Beach Bonfires:</strong> Many hostels organize acoustic nights and small bonfires under the stars, creating a cozy community vibe.</li>
+                </ul>
             </div>
         </div>
 
@@ -109,15 +143,12 @@
 
 <script>
     function showActivity(id) {
-        // Hide all detailed cards
         const cards = document.querySelectorAll('.detail-card');
         cards.forEach(card => card.style.display = 'none');
         
-        // Show the clicked one
         const selectedCard = document.getElementById(id);
         if (selectedCard) {
             selectedCard.style.display = 'block';
-            // Smooth scroll to the content
             selectedCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
     }
