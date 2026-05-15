@@ -20,11 +20,13 @@ h1, h2, h3, h4 {
 .navbar {
     backdrop-filter: blur(10px);
 }
+
 .nav-link {
     font-weight: 600;
     letter-spacing: 1px;
     position: relative;
 }
+
 .nav-link::after {
     content: '';
     width: 0%;
@@ -35,12 +37,15 @@ h1, h2, h3, h4 {
     left: 0;
     transition: 0.3s;
 }
+
 .nav-link:hover::after {
     width: 100%;
 }
+
+/* HOME PAGE BACKGROUND ONLY */
 .hero-home {
     background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
     url('background-photo.webp');
 
     background-size: cover;
@@ -73,6 +78,7 @@ h1, h2, h3, h4 {
     font-weight: bold;
     transition: 0.3s;
 }
+
 .btn-custom:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -84,15 +90,18 @@ h1, h2, h3, h4 {
     border-radius: 20px;
     transition: 0.4s;
 }
+
 .image-card img {
     width: 100%;
     height: 260px;
     object-fit: cover;
     transition: 0.4s;
 }
+
 .image-card:hover img {
     transform: scale(1.1);
 }
+
 .image-card:hover {
     transform: translateY(-5px);
 }
@@ -116,6 +125,7 @@ h1, h2, h3, h4 {
     transition: 0.3s;
     cursor: pointer;
 }
+
 .activity-pill:hover {
     transform: scale(1.05);
 }
@@ -131,10 +141,25 @@ footer {
 }
  
 @keyframes fadeInDown {
-    from {opacity: 0; transform: translateY(-30px);}
-    to {opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 @keyframes fadeInUp {
-    from {opacity: 0; transform: translateY(30px);}
-    to {opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
