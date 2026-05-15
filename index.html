@@ -3,105 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Union Tourism</title>
+<title>Activities - La Union Tourism</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Custom styles for the orange buttons to match your image */
+  .activity-btn {
+    background-color: #f99f38; 
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  .activity-btn:hover {
+    background-color: #e08c2f;
+    color: white;
+  }
+</style>
 </head>
 
-<body>
+<body class="bg-light">
 
 <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
-<div class="container">
-<a class="navbar-brand fw-bold" href="#">La Union Tourism</a>
-<div>
-<a href="index.html" class="nav-link d-inline mx-3">Home</a>
-<a href="about.html" class="nav-link d-inline mx-3">About</a>
-<a href="activities.html" class="nav-link d-inline mx-3">Activities</a>
-<a href="gallery.html" class="nav-link d-inline mx-3">Gallery</a>
-<a href="contact.html" class="nav-link d-inline mx-3">Contact</a>
-</div>
-</div>
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">La Union Tourism</a>
+    <div>
+      <a href="index.html" class="nav-link d-inline mx-3">Home</a>
+      <a href="about.html" class="nav-link d-inline mx-3">About</a>
+      <a href="activities.html" class="nav-link d-inline mx-3">Activities</a>
+      <a href="gallery.html" class="nav-link d-inline mx-3">Gallery</a>
+      <a href="contact.html" class="nav-link d-inline mx-3">Contact</a>
+    </div>
+  </div>
 </nav>
 
-<main>
+<main class="container py-4">
+  
+  <div class="mb-4 text-start">
+    <a href="index.html" class="text-decoration-none fw-bold text-primary">← Home</a>
+  </div>
 
-<section class="hero-home">
-<div>
-<h1>Explore La Union</h1>
-<p class="lead">Where Waves Meet Adventure</p>
-<a href="about.html" class="btn btn-custom">Start Your Journey</a>
-</div>
-</section>
+  <div class="text-center mb-5">
+    <h2 class="mb-3">Activities in La Union</h2>
+    <p class="text-muted">From thrilling adventures to relaxing coastal experiences, La Union offers activities for every type of traveler.</p>
+  </div>
 
-<section class="container py-5">
-<h2 class="text-center mb-4">Why Visit La Union?</h2>
-<div class="row text-center">
-<div class="col-md-4">
-<h4>🌊 Surfing Capital</h4>
-<p>Experience world-class waves perfect for beginners and professionals.</p>
-</div>
-<div class="col-md-4">
-<h4>🌄 Nature Escapes</h4>
-<p>Discover waterfalls, mountains, and scenic hiking trails.</p>
-</div>
-<div class="col-md-4">
-<h4>🍽 Food & Culture</h4>
-<p>Enjoy local delicacies and vibrant coastal lifestyle.</p>
-</div>
-</div>
-</section>
+  <div class="row g-4 justify-content-center mb-5">
+    <div class="col-md-5">
+      <a href="#" class="activity-btn">🏄‍♂️ Learn Surfing</a>
+    </div>
+    <div class="col-md-5">
+      <a href="#" class="activity-btn">🧗‍♂️ Cliff Jumping</a>
+    </div>
+    <div class="col-md-5">
+      <a href="#" class="activity-btn">🚶‍♂️ Heritage Walk</a>
+    </div>
+    <div class="col-md-5">
+      <a href="#" class="activity-btn">🚜 Farm Tours</a>
+    </div>
+    <div class="col-md-5">
+      <a href="#" class="activity-btn">🎨 Arts & Crafts</a>
+    </div>
+    <div class="col-md-5">
+      <a href="#" class="activity-btn">🌅 Sunset Viewing</a>
+    </div>
+  </div>
 
-<section class="container py-5">
-<h2 class="text-center mb-4">Popular Destinations</h2>
-<div class="row g-4">
-
-<div class="col-md-6">
-<div class="image-card position-relative">
-<img src=".//A.jpg">
-<div class="image-card-caption">
-<h5>Luna, La Union</h5>
-<h7>Luna, officially the Municipality of Luna, is a coastal municipality in the province of La Union, Philippines, known for its pristine pebble beaches and historical sites. </h7>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="image-card position-relative">
-<img src=".//B.jpg">
-<div class="image-card-caption">
-<h5>San Juan, La Union</h5>
-<h7>San Juan, officially the Municipality of San Juan, is a coastal municipality in the province of La Union, Philippines. According to the 2024 census, it has a population of 41,319 people. It is known as the Surfing Capital of the North.</h7>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="image-card position-relative">
-<img src=".//C.jpg">
-<div class="image-card-caption">
-<h5>Thunderbird Resorts (San Fernando)</h5>
-<h7>Often called the "Santorini of Asia," this luxury resort is famous for its blue-and-white architecture and clifftop views.</h7>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="image-card position-relative">
-<img src=".//D.jpg">
-<div class="image-card-caption">
-<h5>Tangadan Falls (San Gabriel)</h5>
-<h7> A majestic waterfall accessible via a trek or a scenic jeepney ride. It features a natural pool perfect for a cold dip and cliff jumping.</h7>
-</div>
-</div>
-</div>
-
-</div>
-</section>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">🏄 Surfing Experience</h5>
+          <p class="card-text text-muted small">La Union is known as the surfing capital of Northern Philippines. Beginners can take lessons from local instructors, while experienced surfers can enjoy consistent waves along the coast.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">🧗 Cliff Jumping & River Adventure</h5>
+          <p class="card-text text-muted small">Explore natural rivers and waterfalls while experiencing cliff jumping and river trekking. Perfect for thrill seekers looking for an adrenaline rush.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">⛪ Heritage & Cultural Tours</h5>
+          <p class="card-text text-muted small">Walk through historical landmarks, churches, and heritage sites that showcase the rich culture and history of La Union.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">🚜 Agri-Tourism</h5>
+          <p class="card-text text-muted small">Visit farms, vineyards, and local plantations. Experience fruit picking and learn about agricultural practices in the province.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">🎨 Arts & Crafts</h5>
+          <p class="card-text text-muted small">Discover local craftsmanship including pottery making and handmade products. Support local artists and bring home unique souvenirs.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">🌅 Sunset & Beach Relaxation</h5>
+          <p class="card-text text-muted small">Enjoy breathtaking sunsets along the coastline. Perfect for relaxing, photography, and unwinding after a day of adventure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </main>
 
-<footer class="bg-dark text-white text-center py-3">
-<p>©2026 La Union Tourism</p>
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p>©2026 La Union Tourism</p>
 </footer>
 
 </body>
