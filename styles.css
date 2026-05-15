@@ -9,8 +9,18 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--bg);
-    color: #333;
+
+    /* Added new background photo */
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('background photo.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: white;
 }
  
 h1, h2, h3, h4 {
@@ -40,9 +50,6 @@ h1, h2, h3, h4 {
 }
  
 .hero-home {
-    /* Background updated to 5555.jfif */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('5555.jfif') center/cover no-repeat fixed;
     height: 90vh;
     display: flex;
     align-items: center;
