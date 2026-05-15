@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* This ensures all images are the same height and cropped perfectly */
+        .gallery-img {
+            width: 100%;
+            height: 250px; /* Adjust this height to your liking */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Optional: Keep the card heights consistent if text length varies */
+        .gallery-item {
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,45 +27,45 @@
 </div>
 
 <main class="container py-5">
-<h1 class="text-center mb-5">Gallery</h1>
+    <h1 class="text-center mb-5">Gallery</h1>
 
-<div class="row g-4">
-    <div class="col-md-4">
-        <img src=".//F.jpg" class="img-fluid rounded">
-        <p class="fw-bold mt-2">Urbiztondo Beach</p>
-        <h7> The surfing heart of the North. It is perfect for both beginners and seasoned surfers, especially during the swell season from October to March.</h7>
-    </div>
+    <div class="row g-4">
+        <div class="col-md-4 gallery-item">
+            <img src=".//F.jpg" class="gallery-img">
+            <p class="fw-bold mt-2 mb-1">Urbiztondo Beach</p>
+            <p class="text-muted">The surfing heart of the North. It is perfect for both beginners and seasoned surfers, especially during the swell season from October to March.</p>
+        </div>
 
-    <div class="col-md-4">
-        <img src=".//G.jpg" class="img-fluid rounded">
-        <p class="fw-bold mt-2">Immuki Island</p>
-        <h7>Known for its crystal-clear lagoons and mangrove formations, it’s a great spot for snorkeling and relaxing in natural saltwater pools.</h7>
-    </div>
+        <div class="col-md-4 gallery-item">
+            <img src=".//G.jpg" class="gallery-img">
+            <p class="fw-bold mt-2 mb-1">Immuki Island</p>
+            <p class="text-muted">Known for its crystal-clear lagoons and mangrove formations, it’s a great spot for snorkeling and relaxing in natural saltwater pools.</p>
+        </div>
 
-    <div class="col-md-4">
-        <img src=".//E.jpg" class="img-fluid rounded">
-        <p class="fw-bold mt-2">Baluarte Watch Tower</p>
-        <h7>A sentinel of the sea for over 400 years, the Baluarte Watchtower in Luna is where history meets the tides.</h7>
-    </div>
+        <div class="col-md-4 gallery-item">
+            <img src=".//E.jpg" class="gallery-img">
+            <p class="fw-bold mt-2 mb-1">Baluarte Watch Tower</p>
+            <p class="text-muted">A sentinel of the sea for over 400 years, the Baluarte Watchtower in Luna is where history meets the tides.</p>
+        </div>
 
-    <div class="col-md-4">
-        <img src=".//I.jpg" class="img-fluid rounded">
-        <p class="fw-bold mt-2">Agoo Eco-Park (Agoo)</p>
-        <h7>Famous for its picturesque "tunnel" of tall pine trees, this park is a popular spot for photography, biking, and picnics.</h7>
-    </div>
+        <div class="col-md-4 gallery-item">
+            <img src=".//I.jpg" class="gallery-img">
+            <p class="fw-bold mt-2 mb-1">Agoo Eco-Park (Agoo)</p>
+            <p class="text-muted">Famous for its picturesque "tunnel" of tall pine trees, this park is a popular spot for photography, biking, and picnics.</p>
+        </div>
 
-    <div class="col-md-4">
-        <img src=".//J.jpg" class="img-fluid rounded">
-        <p class="fw-bold mt-2">Seven Hills (San Fernando)</p>
-        <h7>A cluster of hills that provides a challenging but rewarding hike for outdoor enthusiasts.</h7>
-    </div>
+        <div class="col-md-4 gallery-item">
+            <img src=".//J.jpg" class="gallery-img">
+            <p class="fw-bold mt-2 mb-1">Seven Hills (San Fernando)</p>
+            <p class="text-muted">A cluster of hills that provides a challenging but rewarding hike for outdoor enthusiasts.</p>
+        </div>
 
-    <div class="col-md-4">
-        <img src=".//H.jpg" class="img-fluid rounded">
-        <p class="fw-bold mt-2">San Juan Night Market</p>
-        <h7>The evening food park and market scene along the main road of San Juan is a must-visit for local street food.</h7>
+        <div class="col-md-4 gallery-item">
+            <img src=".//H.jpg" class="gallery-img">
+            <p class="fw-bold mt-2 mb-1">San Juan Night Market</p>
+            <p class="text-muted">The evening food park and market scene along the main road of San Juan is a must-visit for local street food.</p>
+        </div>
     </div>
-</div>
 </main>
 </body>
 </html>
