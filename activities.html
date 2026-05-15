@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -12,7 +12,7 @@
         transition: 0.3s;
     }
     
-    /* Styling the pills as requested earlier */
+    /* Styling the pills */
     .activity-pill {
         background: linear-gradient(to bottom, #ff9800, #f44336);
         color: white;
@@ -59,24 +59,65 @@
         <div class="col-md-6"><button class="activity-pill" onclick="showActivity('sunset')">🌅 Sunset Viewing</button></div>
     </div>
 
-    <div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center py-5">
+        
         <div id="surfing" class="col-md-8 detail-card">
             <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
                 <h4>🏄 Surfing Experience</h4>
-                <p>La Union is known as the surfing capital of Northern Philippines. Beginners can take lessons from local instructors, while experienced surfers can enjoy consistent waves along the coast.</p>
+                <p>La Union is the <strong>Surfing Capital of the North</strong>. You can find world-class waves in San Juan, specifically at Urbiztondo Beach. Local instructors are available for hourly lessons, providing a board and guidance for beginners to catch their first wave.</p>
             </div>
         </div>
+
+        <div id="cliff" class="col-md-8 detail-card">
+            <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
+                <h4>🧗 Cliff Jumping & River Trekking</h4>
+                <p>Head to <strong>Tangadan Falls</strong> in San Gabriel for an adrenaline rush. The activity involves a scenic trek through rivers and forest trails, ending at a majestic waterfall where you can jump from cliffs ranging from 10 to 40 feet into deep natural pools.</p>
+            </div>
         </div>
+
+        <div id="heritage" class="col-md-8 detail-card">
+            <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
+                <h4>🚶 Heritage & Cultural Walk</h4>
+                <p>Explore the history of La Union by visiting the <strong>Baluarte Watchtower</strong> in Luna and the Ma-Cho Temple in San Fernando. These sites tell the story of the province's colonial past and its diverse cultural influences over the centuries.</p>
+            </div>
+        </div>
+
+        <div id="farm" class="col-md-8 detail-card">
+            <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
+                <h4>🌾 Agri-Tourism & Farm Tours</h4>
+                <p>Visit the famous <strong>Grape Farms</strong> in Bauang where you can experience "Pick and Pay" harvesting. You can also explore local bee farms and dragon fruit plantations to see how La Union's fertile land supports sustainable agriculture.</p>
+            </div>
+        </div>
+
+        <div id="arts" class="col-md-8 detail-card">
+            <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
+                <h4>🎨 Pottery & Local Arts</h4>
+                <p>Visit the <strong>Red Clay Pagdamilian</strong> in San Juan to learn the traditional art of pottery. You can try your hand at the potter's wheel and create your own ceramic souvenirs, or visit local galleries showcasing the works of La Union's vibrant artist community.</p>
+            </div>
+        </div>
+
+        <div id="sunset" class="col-md-8 detail-card">
+            <div class="p-4 bg-white shadow-sm rounded border-start border-warning border-4">
+                <h4>🌅 Sunset & Beach Relaxation</h4>
+                <p>There is nothing like a <strong>La Union Sunset</strong>. The coastline offers a front-row seat to one of the most beautiful golden hours in the Philippines. It's the perfect time to unwind at a beachfront cafe or simply sit on the sand and enjoy the view.</p>
+            </div>
+        </div>
+
+    </div>
 
 </main>
 
 <script>
     function showActivity(id) {
+        // Hide all detailed cards
         const cards = document.querySelectorAll('.detail-card');
         cards.forEach(card => card.style.display = 'none');
+        
+        // Show the clicked one
         const selectedCard = document.getElementById(id);
         if (selectedCard) {
             selectedCard.style.display = 'block';
+            // Smooth scroll to the content
             selectedCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
     }
