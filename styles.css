@@ -38,12 +38,10 @@ h1, h2, h3, h4 {
 .nav-link:hover::after {
     width: 100%;
 }
- 
-/* Homepage Background Only */
 .hero-home {
     background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('background photo.webp');
+    url('background-photo.webp');
 
     background-size: cover;
     background-position: center;
